@@ -9,7 +9,7 @@ module Shoulda
     #
     #   should_fail do
     #     should_require_attributes :comments
-    #     should_protect_attributes :name
+    #     should_not_allow_mass_assignment_of :name
     #   end
     def should_fail(&block)
       context "should fail when trying to run:" do
